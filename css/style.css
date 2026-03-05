@@ -1,0 +1,1059 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family:'quastro';
+    src: url(../fonts/Quastro-Regular.ttf);
+}
+@font-face {
+    font-family:'merienda';
+    src: url(../fonts/Merienda-Regular.ttf);
+}
+@font-face {
+    font-family:'commissioner';
+    src: url(../fonts/Commissioner-Regular.ttf);
+}
+@font-face {
+    font-family:'acme';
+    src: url(../fonts/Acme-Regular.ttf);
+}
+@font-face {
+    font-family:'philosopher';
+    src: url(../fonts/Philosopher-Regular.ttf);
+}
+body {
+    height: 4600px;
+    font-family: sans-serif;
+    background-image: url(../images/5835134.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed ;
+    position: relative;
+}
+.body-overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* ////////////////////////////general + body//////////////////////////// */
+.header1 {
+    width: 100%;
+    height: 32px;
+    border-bottom: 1px solid grey;
+    background-color: black;
+}
+.header1 ul, .header2 ul {
+    list-style-type: none;
+    display: flex;
+}
+.header1 ul li{
+    margin-top: 6px;
+}
+.header-item1 {
+    margin-left: 115px;
+}
+.header-item {
+    margin-left: 25px;
+}
+.header-item5 {
+    margin-left: 640px;
+}
+
+.header1 li {
+    position: relative;
+
+}
+.header1 a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #c9a227;
+    font-size: 15px;
+    font-family: 'philosopher';
+}
+.header1 a::after, .header1 a::before {
+    position: absolute;
+    content: "";
+    width: 2.5px;
+    height: 0;
+    transition: 1s;
+    background-color: #edc531;
+}
+.header1 a::after {
+    bottom: 0;
+    left: -9px;
+}
+.header1 a::before {
+    top: -1px;
+    right: -9px;
+}
+.header1 a:hover::after, .header1 a:hover::before {
+    width: 2.5px;
+    height: 20px;
+    transition: 1s;
+    background-color: #edc531;
+}
+.header1-icon:hover {
+    transform: rotateY(180deg);
+}
+.header1-icon:hover i {
+    color: #ffd12b
+}
+/* ////////////////////////////header1//////////////////////////// */
+
+.header2 {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.website-logo {
+    display: flex;
+    width: auto;
+    margin: 4px 0 0 90px;
+}
+.header2 h1 {
+    text-transform: capitalize;
+    font-family: 'quastro';
+    font-size: 31px;
+    margin: 10px 0 0 3px;
+    background: linear-gradient(135deg, #8a6a00, #d4a500, #f0cc55, #b88900);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 2;
+}
+.links2-parent {
+    width: 500px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 13px 0 0 180px;
+}
+.header2-item7 {
+    margin: 30px 0 0 213px;
+}
+.header2-item8, .header2-item9 {
+    margin: 30px 0 0 25px;
+}
+.header2-item, .header2-item1 {
+    position: relative;
+}
+.header2-links , .header2-icon-link {
+    font-size: 18px;
+}
+.angle {
+    font-size: 14;
+    margin-left: 5px;
+}
+.logo , .header2-links , .header2-icon-link {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #c9a227;
+}
+.header2-icon-link {
+    background: linear-gradient(135deg, #8a6a00, #d4a500, #f0cc55, #b88900);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.header2-links, .pages-list1, .pages-list2 {
+    font-family: 'philosopher';
+    font-size: 19px;
+}
+.links2-parent span::after, .links2-parent span::before {
+    position: absolute;
+    content: "";
+    bottom: -7px;
+    width: 0;
+    height: 0;
+}
+.links2-parent span::after {
+    left: -12px;
+}
+.links2-parent span::before {
+    right: -12px;
+}
+.links2-parent span:hover::after , .links2-parent span:hover::before{
+    width: 2px;
+    height: 36px;
+}
+.header2-links::after, .header2-links::before {
+    position: absolute;
+    content: "";
+    left: -12px;
+    width: 0;
+    height: 0;
+}
+.header2-links::after {
+    top: -9px;
+}
+.header2-links::before {
+    bottom: -9px;
+}
+.header2-links:hover::after , .header2-links:hover::before {
+    height: 2px;
+}
+.links2-parent span::after, .links2-parent span::before, .links2-parent span:hover::after, .links2-parent span:hover::before, .header2-links::after, .header2-links::before, .header2-links:hover::after , .header2-links:hover::before {
+    transition: 0.5s;
+    background-color: #edc531;
+}
+.header2-home:hover::after , .header2-home:hover::before{
+    width: 150%;
+}
+.header2-rings:hover::after , .header2-rings:hover::before{
+    width: 153%;
+}
+.header2-earrings:hover::after , .header2-earrings:hover::before{
+    width: 135%;
+}
+.header2-bangles:hover::after , .header2-bangles:hover::before{
+    width: 138%;
+}
+.header2-pages:hover::after , .header2-pages:hover::before{
+    width: 139%;
+}
+.header2-contact:hover::after , .header2-contact:hover::before{
+    width: 138%;
+}
+.dropdown-point {
+    position: relative;
+}
+.pages-list1, .pages-list2 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+.pages-list1{
+    width: 305px;
+    height: 184px;
+    background: linear-gradient(145deg, #000000, #1a1a1a, #2e2e2e);
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #ffd332 , -1px -1px 2px #ffd332;
+    top: 38px;
+    left: -116px;
+    transform: scale(0,0);
+    opacity: 0.1;
+    transition: all 1s;
+}
+.dropdown-point:hover .pages-list1 {
+    transform: scale(1,1);
+    transition: all 1.2s;
+    opacity: 1;
+}
+.pages-list2 {
+    width: 120px;
+    height: 200px;
+    left: 190px;
+}
+.list1-title , .list2-title {
+    width: 50px;
+    text-transform: capitalize;
+    font-size: 17.5px;
+    margin: 20px 0 10px 0;
+    border-bottom: 1px dotted #ffe169;
+    padding-bottom: 8px;
+    color: #edc531;
+}
+.list1-title , .list1-link{
+    margin-left: 18px;
+}
+.list2-title {
+    width: 36px;
+}
+.list1-link , .list2-link {
+    line-height: 28px;
+}
+.pages-list1 a , .pages-list2 a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    transform: scale(1,1);
+    transition: all 0.1s;
+    background: linear-gradient(135deg, #8a6a00, #d4a500, #f0cc55, #b88900);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.pages-list1 a:hover , .pages-list2 a:hover {
+    color: #ffd12b;
+    transform: scale(1.13, 1.13);
+    transition: all 0.1s;
+}
+.header2-links:hover , .header2-icon a:hover {
+    color: #ffd12b;
+}
+.cart {
+    position: relative;
+}
+.cart::after {
+    content: "2";
+    position: absolute;
+    top: -14px;
+    right: -2px;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#8a6a00,#d4a500, #f0cc55, #b88900);
+    color: black;
+    text-align: center;
+    transition: 1s;
+    font-family: 'philosopher';
+}
+
+.cart:hover::after {
+    border-radius: 50%;
+    top: -17px;
+    transition: 1s;
+}
+/* ////////////////////////////header2//////////////////////////// */
+.sale {
+    width: 100%;
+    height: 37px;
+    background: linear-gradient(135deg, #6b5200, #a67d00, #ab8100, #9c7300);
+    text-align: center;
+    color: #fff;
+    font-family: 'Philosopher', serif;
+}
+.sale p {
+    padding-top: 8px;
+}
+.sale a {
+    color: #fdeaa6;
+    transition: all 0.2s;
+    text-underline-offset: 8px;
+}
+.sale a:hover {
+    letter-spacing: 2px;
+}
+/* ////////////////////////////sale//////////////////////////// */
+
+.hero-image {
+    width: 100%;
+    height: 79.5vh;
+    background-image: url(../images/hero-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.home-content {
+    width: 500px;
+    transform: translate(145px, 150px );
+    text-align: center;
+    color: #fff;
+}
+
+.home-main-title {
+    font-family: 'merienda';
+    font-size: 27px;
+    color: #dbb42c;
+}
+
+.home-sec-title {
+    margin: 18px 0;
+    font-family: 'acme';
+    font-weight: 300;
+    font-size: 36px;
+}
+
+.home-content p {
+    line-height: 24px;
+    margin-bottom: 32px;
+    font-family: 'commissioner';
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    padding: 0 34px;
+}
+
+.home-content button {
+    padding: 12px 25px;
+    text-transform: uppercase;
+    font-family: 'philosopher';
+    font-size: 22px;
+    background: linear-gradient(135deg,#8a6a00,#d4a500, #f0cc55, #b88900);
+    border-radius: 25px;
+    transition: 0.5s;
+    border: none;
+}
+.home-content a {
+    text-decoration: none;
+}
+.home-content button:hover {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0), rgba(245, 214, 103, 0));
+    border: 1px solid #edc531;
+    background: linear-gradient(135deg, #8a6a00, #d4a500, #f0cc55, #b88900);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}
+/* ////////////////////////////main//////////////////////////// */
+
+.section1 {
+    height: 60vh;
+    margin-top: 140px;
+}
+.section1-container {
+    height: 60vh;
+    width: 86%;
+    margin: auto;
+}
+.section1-parent {
+    display: flex;
+    justify-content: space-between;
+}
+.section1-image {
+    width: 400px;
+    height: 417px;
+    position: relative;
+    overflow: hidden;
+}
+.section1-image img {
+    width: 100%;
+    height: 100%;
+}
+.section1-info {
+    position: absolute;
+    width: 400px;
+    top: 350px;
+    z-index: 5;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: auto;
+    transition: all 1s;
+}
+.gradient {
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    height: 28%;
+    background-image: linear-gradient(to top,rgba(155, 155, 155, 0.6),#00000005);
+}
+.section1 h2 {
+    font-family: 'acme';
+    margin-bottom: 18px;
+}
+.section1 a {
+    color: #ffd12b;
+    transition: all 0.2s;
+    text-underline-offset: 8px;
+    font-family: 'philosopher';
+    font-weight: 600;
+    font-size: 19px;
+}
+.section1 a:hover {
+    letter-spacing: 2.1px;
+}
+.section1-image:hover img {
+    transform: scale(1.2);
+    transition: all 1s;
+}
+.section1-image:hover .section1-info {
+    top: 315px;
+    transition: all 1s;
+}
+/* ////////////////////////////section1//////////////////////////// */
+
+.section2-header {
+    width: 86%;
+    margin: auto;
+    margin-top: 140px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+    text-transform: capitalize;
+    position: relative;
+}
+.section2-header h2 {
+    font-size: 32px;
+    font-family: 'merienda';
+    letter-spacing: 0.8px;
+    color: #c9a227;
+}
+.section2-links {
+    position: absolute;
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    list-style-type: none;
+    top: 5px;
+    right: 1px;
+}
+.section2-links a {
+    text-decoration: none;
+    color: #c9a227;
+    font-size: 21px;
+    font-family: 'philosopher';
+
+}
+.section2-links .chosen-link {
+    color: #ffc800;
+    padding-bottom: 32px;
+    border-bottom: 5px solid #ffc800;
+}
+.section2-container {
+    height: 67vh;
+    width: 86%;
+    margin: auto;
+    margin-top: 54px;
+}
+.section2-parent {
+    display: flex;
+    justify-content: space-between;
+}
+.section2-image {
+    width: 314px;
+    height: 390px;
+    position: relative;
+    perspective: 800px;
+}
+.section2-image img {
+    width: 100%;
+    height: 100%;
+}
+.section2-image::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-image: url(../images/earrings7.jpg);
+    background-size: cover;
+    background-position: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+.section2-image2::after {
+    background-image: url(../images/earrings3.jpg);
+}
+.section2-image3::after {
+    background-image: url(../images/earrings2.jpg);
+}
+.section2-image4::after {
+    background-image: url(../images/earrings4.jpg);
+}
+.section2-image:hover::after{
+    transform: rotateY(0deg);
+}
+.section2-icons {
+    width: 180px;
+    height: 50px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 10;
+    top: 325px;
+    left: 67px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+    transition: 1s;
+}
+.section2-image:hover .section2-icons {
+    top: 312px;
+    opacity: 1;
+}
+.section2-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    padding: 10px 15px;
+    transition: all 1s;
+}
+.section2-icons a:hover {
+    color: #f3c51e;
+    background-color: black;
+}
+.section2-info {
+    text-align: center;
+    line-height: 32px;
+    font-family: 'acme';
+    letter-spacing: 1px;
+    color: #fff;
+}
+.section2-info h2 {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 23px;
+}
+.section2 span {
+    font-size: 19px;
+}
+.section2-info .price-adis {
+    margin-right: 10px;
+    color: #dbdbdb;
+}
+.section2-info .price-bdis {
+    text-decoration: line-through;
+}
+.section2-image:hover .section2-info h2 {
+    color: #ffc800;
+}
+.section2-image:hover .section2-info .price-adis {
+    color: #fff;
+}
+.section2-image:hover .section2-info .price-bdis {
+    color: #dbdbdb;
+}
+.section2-left-link, .section2-right-link {
+    text-decoration: none;
+    color: #c9a227;
+}
+.section2-left-icon , .section2-right-icon {
+    position: absolute;
+    transform: translateY(-284px);
+    font-size: 30px;
+}
+.section2-left-icon {
+    left: 82px;
+}
+.section2-right-icon {
+    right: 82px;
+}
+.section2-left-icon:hover , .section2-right-icon:hover {
+    color: #ffc800;
+}
+/* ////////////////////////////section2//////////////////////////// */
+
+.section3-container {
+    width: 100%;
+    height: 57vh;
+    background: linear-gradient(145deg, #000000, #1a1a1a, #2e2e2e);
+    margin: 144px 0;
+    box-shadow: 0 0 8px rgba(255, 211, 50, 0.6), 0 0 18px rgba(255, 220, 120, 0.4);
+    color: #fff;
+}
+.section3-content {
+    width: 45%;
+    margin: auto;
+    padding: 40px 0;
+    text-align: center;
+}
+.section3-title {
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: 'merienda';
+    letter-spacing: 0.8px;
+    color: #c9a227;
+}
+.section3-p {
+    margin: 50px 0;
+    font-family: 'commissioner';
+    font-size: 22px;
+    line-height: 35px;
+}
+.customer-details img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-left: -150px;
+}
+.customer-details h2 {
+    margin: -61px 0 5px 60px;
+    text-transform: capitalize;
+    font-family: 'philosopher';
+    font-size: 19px;
+    background: linear-gradient(135deg, #8a6a00, #d4a500, #f0cc55, #b88900);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;}
+.customer-details p {
+    margin-left: 87px;
+    font-family: 'philosopher';
+}
+.section3-left-icon , .section3-right-icon {
+    position: absolute;
+    transform: translateY(-197px);
+    font-size: 30px;
+}
+.section3-left-icon {
+    left: 170px;
+}
+.section3-right-icon {
+    right: 170px;
+}
+.section3-left-icon:hover , .section3-right-icon:hover {
+    color: #ffc800;
+}
+/* ////////////////////////////section3//////////////////////////// */
+
+.section4-title {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'merienda';
+    letter-spacing: 0.8px;
+    color: #c9a227;
+}
+.section4-container {
+    padding-bottom: 40px;
+}
+.section4-image {
+    height: 470px;
+    overflow: hidden;
+}
+.section4-image img {
+    height: 85.5%;
+}
+.section4-image::after {
+    background-image: url(../images/elegant\ ring.jpg);
+    transform: translateY(-75%);
+    opacity: 0;
+}
+.section4-image2::after {
+    background-image: url(../images/necklace3.jpg);
+}
+.section4-image3::after {
+    background-image: url(../images/necklace4.jpg);
+}
+.section4-image4::after {
+    background-image: url(../images/bangles3.jpg);
+}
+.section4-image:hover::after {
+    transform: translateY(-68px);
+    opacity: 1;
+}
+.section2-info a, .section4-info a {
+    text-decoration: none;
+    color: #fff;
+}
+.section4-info span {
+    font-size: 19px;
+}
+.section4-left-icon , .section4-right-icon {
+    transform: translateY(-276px);
+}
+/* ////////////////////////////section4//////////////////////////// */
+
+.section5-container {
+    height: 113vh;
+}
+.section5-title {
+    margin-top: -8px ; 
+}
+.section5-parent {
+    width: 86%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.section5-image {
+    width: 392px;
+    height: 390px;
+    position: relative;
+}
+.section5-image img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s ease;
+}
+.section5-info {
+    color: #e2e2e2;
+}
+.section5-info .news-type {
+    letter-spacing: normal;
+    margin: 20px 0 14px 0;
+}
+.section5-info h2 {
+    font-weight: 400;
+    font-family: 'acme';
+    font-size: 23px;
+    color: #fff;
+}
+.section5-image-title {
+    text-decoration: none;
+}
+.section5-info {
+    height: 259px;
+}
+.section5-info .news-p {
+    margin: 15px 0;
+    font-size: 18px;
+    font-family: 'commissioner';
+    line-height: 26px;
+    letter-spacing: 0.5px;
+}
+.section5-image img:hover {
+    transform: scale(1.04,1.04);
+}
+.section5-image:hover .section5-info h2 {
+    color: #ffc800;
+}
+.section5-info .section5-link {
+    text-transform: capitalize;
+    font-size: 19px;
+    font-family: 'philosopher';
+    color: #fff;
+    transform: scale(1,1);
+    transition: all 0.1s ease;
+    display: inline-block;
+    text-underline-offset: 6px;
+    letter-spacing: 1px;
+}
+.section5-info a:hover {
+    transform: scale(1.08,1.15);
+    transition: all 0.1s ease;
+}
+/* ////////////////////////////section5//////////////////////////// */
+
+.section6-container {
+    width: 100%;
+    height: 38vh;
+    margin-top: -140px;
+}
+.section6-parent {
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.section6-item .icon-div {
+    width: 100%;
+    height: 60px;
+    position: relative;
+    overflow: hidden;
+}
+.icon-div i {
+    font-size: 48px;
+    width: 100%;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #7a5c00, #ffd700, #fff1a8, #c99700);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.1s linear;
+}
+#icon-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(65px);
+    background: linear-gradient(135deg, #7a5f00, #c09300, #e8c24a, #a87c00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.icon-div:hover i {
+    transform: translateY(-50px);
+}
+.icon-div:hover #icon-effect {
+    transform: translateY(0);
+}
+.section6-item h2 {
+    text-transform: capitalize;
+    font-family: 'acme';
+    letter-spacing: 1px;
+    font-size: 22px;
+    font-weight: 300;
+    color: #ffc800;
+    margin-bottom: 6px;
+}
+.section6-item p {
+    font-family: 'commissioner';
+    color: #e2e2e2;
+}
+/* ////////////////////////////section6//////////////////////////// */
+
+.footer-container {
+    width: 100%;
+    height: 76vh;
+    background: linear-gradient(145deg, #000000, #1a1a1a, #2e2e2e);
+    box-shadow: 0 0 8px rgba(255, 211, 50, 0.6), 0 0 18px rgba(255, 220, 120, 0.4);
+    padding: 35px 0;
+    color: #fff;
+}
+.footer-part1 {
+    width: 86%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    border-bottom: 1px solid #a0a0a0;
+}
+.footer-part1 h2 {
+    text-transform: capitalize;
+    font-family: 'merienda';
+    font-size: 21px;
+    letter-spacing: 0.8px;
+    margin-bottom: 10px;
+    color: #c9a227;
+}
+.footer-part1 p {
+    font-family: 'commissioner';
+    padding-bottom: 30px;
+}
+.footer-part1 input {
+    width: 380px;
+    height: 50px;
+    margin-bottom: 28px;
+    margin-left: 125px;
+}
+input[placeholder="Enter Your Email"] {
+    padding-left: 18px;
+    font-family: 'acme';
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    border-radius: 30px;
+}
+.email button {
+    padding: 10px 28px;
+    text-transform: capitalize;
+    font-family: 'philosopher';
+    margin: 0 0 0px 7px;
+    font-size: 22px;
+    background: linear-gradient(135deg, #8a6a00, #d4a500,  #f0cc55,  #b88900);
+    border-radius: 30px;
+    transition: 0.1s linear;
+    border: none;
+}
+.footer-part1 a {
+    text-decoration: none;
+}
+.email button:hover {
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+    transition: 0.1s linear;
+}
+.footer-part1 .social-links {
+    font-size: 25px;
+    margin: -28px 0 0 120px;
+}
+.footer-part1 .insta-icon {
+    margin: -28px 10px 0 10px
+}
+.footer-part1 .social-links a {
+    color: #cfa51c;
+    transform: scale(0.9,0.9);
+}
+.footer-part1 .social-links i:hover {
+    background: linear-gradient(135deg, #8a6a00, #d4a500, #f0cc55, #b88900);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transform: scale(1.1,1.1);
+}
+.footer-part2 {
+    width: 86%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #a0a0a0;
+}
+.footer-part2 div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 70px;
+    margin-bottom: 55px;
+}
+.footer-part2 .footer-website-logo {
+    margin-right: 100px;
+}
+.footer-website-logo {
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    margin: 4px 0 0 0px;
+}
+.footer-website-logo h2 {
+    text-transform: capitalize;
+    font-family: 'quastro';
+    font-size: 30px;
+    margin: -54px 0 0 94px;
+    background: linear-gradient(135deg, #8a6a00, #d4a500, #f0cc55, #b88900);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 2;
+}
+.link-group h2 {
+    font-family: 'acme';
+    font-weight: 300;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+.link-group {
+    width: fit-content;
+}
+.link-group3 {
+    margin: 0 55px
+}
+.link-group2 {
+    margin-left: 55px;
+}
+.link-group a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'philosopher';
+    font-size: 18px;
+    letter-spacing: 0.6px;
+    line-height: 30px;
+    color: #dbb42c;
+    transform: scale(1,1);
+    transition: all 0.5s;
+    display: inline-block;
+}
+.footer-part3 {
+    text-align: center;
+    font-family: 'commissioner';
+    margin-top: 18px;
+    letter-spacing: 0.7px;
+}
+.link-group a:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.5s;
+    text-decoration: underline;
+}
+.footer-part3 span {
+    margin: 0 6px;
+}
+.footer-part3 i {
+    animation: shiny 0.5s linear infinite alternate ;
+}
+@keyframes shiny{
+    0%{
+        color: #ffffff;
+        transform: scale(0.9);
+    }
+    100%{
+        color: #ffc800;
+        transform: scale(1.4);
+    }
+}
+.footer-part3 a {
+    text-decoration: none;
+    background: linear-gradient(135deg, #8a6a00, #d4a500, #f0cc55, #b88900);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: all 0.1s;
+}
+.footer-part3 a:hover {
+    text-decoration: underline;
+    letter-spacing: 1.4px;
+    transition: all 0.1s;
+}
+/* ////////////////////////////footer//////////////////////////// */
