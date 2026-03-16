@@ -443,7 +443,8 @@ body {
 }
 .section1 h2 {
     font-family: 'acme';
-    margin-bottom: 18px;
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
 .section1 a {
     color: #ffd12b;
@@ -461,7 +462,7 @@ body {
     transition: all 1s;
 }
 .section1-image:hover .section1-info {
-    top: 315px;
+    top: 308px;
     transition: all 1s;
 }
 /* ////////////////////////////section1//////////////////////////// */
